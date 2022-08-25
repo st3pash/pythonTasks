@@ -1,0 +1,2 @@
+mac = list(input().split(':'))
+
