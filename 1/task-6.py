@@ -1,9 +1,15 @@
-m, n = int(input()), int(input())
-o = m
-mono = ' *'
-multi = list(mono * (m * n // 2))
-while n > 0:
-    multi.insert(m, '\n')
-    m += o + 1
-    n -= 1
-print(*multi, sep='')
+m, n = input().split()
+m, n = int(m), int(n)
+for i in range(m):
+    for j in range(n):
+       if i % 2 == 0:
+           if j % 2 == 0:
+               print(" ", end=' ')
+           else:
+               print("*", end=' ')
+       else:
+           if j % 2 != 0:
+               print(" ", end=' ')
+           else:
+               print("*", end=' ')
+    print()
