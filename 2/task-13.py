@@ -1,4 +1,3 @@
-# roman numerals encoder
-def solution(n):
-    M = 1000
-    D =
+# human readable time
+def make_readable(seconds):
+    return f'{seconds // 3600:02d}:{seconds // 60 - (seconds // 3600) * 60:02d}:{seconds % 60:02d}'
